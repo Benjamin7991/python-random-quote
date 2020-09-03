@@ -1,11 +1,9 @@
-def main():
-  # print("Keep it logically awesome.")
+#!/usr/bin/env python3
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
+import random
+#def random_quote():
+list = []
+with open("quotes.txt", "r") as f:
+    f_contents = f.readlines()
 
-  #print(quotes)
-
-if __name__== "__main__":
-  main()
+print(random.choice(f_contents))
